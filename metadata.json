@@ -1,0 +1,6 @@
+{
+  "name": "UrbanCadastra AI",
+  "description": "AI-powered urban parcel mapping and municipal GIS cadastral intelligence platform for drone survey analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
