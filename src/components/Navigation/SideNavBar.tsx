@@ -66,7 +66,7 @@ export const SideNavBar: React.FC<SideNavBarProps> = ({
           </div>
           <div>
             <span className="font-bold text-lg tracking-tight text-slate-800 block leading-tight">
-              UrbanCadastra
+              DroneParcelAI
             </span>
             <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-wider">
               AI Spatial Core

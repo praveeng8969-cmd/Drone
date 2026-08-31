@@ -70,7 +70,7 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
             onClick={() => onViewChange('dashboard')}
             className="font-bold text-slate-900 hover:text-indigo-600 cursor-pointer transition-colors"
           >
-            UrbanCadastra
+            DroneParcelAI
           </span>
           <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
           <button

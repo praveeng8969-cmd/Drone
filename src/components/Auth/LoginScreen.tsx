@@ -88,7 +88,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
                 </div>
                 <div>
                   <h1 className="font-black text-2xl text-white tracking-tight leading-none">
-                    UrbanCadastra AI
+                    DroneParcelAI
                   </h1>
                   <p className="text-[11px] font-bold text-indigo-300 tracking-widest uppercase mt-1">
                     Municipal Planning Dept
@@ -306,7 +306,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
                 <div className="w-8 h-8 rounded-xl bg-slate-900 text-white flex items-center justify-center">
                   <Layers className="w-5 h-5" />
                 </div>
-                <span className="font-black text-slate-900 tracking-tight text-lg uppercase">URBANCADASTRA</span>
+                <span className="font-black text-slate-900 tracking-tight text-lg uppercase">DRONEPARCELAI</span>
               </div>
               <div className="border border-slate-200 rounded-full px-3 py-1 text-xs font-bold text-slate-600 bg-slate-50">
                 🇬🇧 EN ▾
@@ -316,7 +316,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
             <div className="my-auto max-w-sm mx-auto w-full">
               <div className="text-center mb-8">
                 <h1 className="text-3xl font-black text-slate-900 mb-1 tracking-tight">Hi Spatial Designer</h1>
-                <p className="text-sm text-slate-500">Welcome to UrbanCadastra AI Platform</p>
+                <p className="text-sm text-slate-500">Welcome to DroneParcelAI Platform</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4">
