@@ -16,6 +16,15 @@
   }
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #F8FAFC;
   color: #0F172A;

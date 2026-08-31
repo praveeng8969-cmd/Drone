@@ -50,8 +50,8 @@ export const NewProjectModal: React.FC<NewProjectModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-[24px] border border-slate-100 shadow-2xl max-w-lg w-full overflow-hidden animate-in fade-in zoom-in-95">
+    <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto custom-scrollbar">
+      <div className="bg-white rounded-[24px] border border-slate-100 shadow-2xl max-w-lg w-full max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 my-auto">
         {/* Header */}
         <div className="bg-slate-50 px-6 py-4.5 border-b border-slate-100 flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -72,7 +72,7 @@ export const NewProjectModal: React.FC<NewProjectModalProps> = ({
         </div>
 
         {/* Form Body */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 text-xs">
+        <form onSubmit={handleSubmit} className="p-6 space-y-4 text-xs overflow-y-auto custom-scrollbar flex-1">
           <div>
             <label className="block font-bold text-slate-500 uppercase tracking-wider mb-1.5">
               Project Title

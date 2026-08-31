@@ -10,10 +10,10 @@ export const TelemetryModal: React.FC<TelemetryModalProps> = ({ isOpen, onClose 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-[24px] border border-slate-100 shadow-2xl max-w-xl w-full overflow-hidden animate-in fade-in zoom-in-95">
+    <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto custom-scrollbar">
+      <div className="bg-white rounded-[24px] border border-slate-100 shadow-2xl max-w-xl w-full max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 my-auto">
         {/* Header */}
-        <div className="bg-slate-900 text-white px-6 py-4.5 flex justify-between items-center">
+        <div className="bg-slate-900 text-white px-6 py-4.5 flex justify-between items-center shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-md shadow-indigo-600/30">
               <Zap className="w-5 h-5 fill-white" />
@@ -32,7 +32,7 @@ export const TelemetryModal: React.FC<TelemetryModalProps> = ({ isOpen, onClose 
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-4 text-xs">
+        <div className="p-6 space-y-4 text-xs overflow-y-auto custom-scrollbar flex-1">
           {/* Top Real-time Stats */}
           <div className="grid grid-cols-3 gap-3 text-center">
             <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-100">

@@ -77,7 +77,7 @@ export const AIProcessingView: React.FC<AIProcessingViewProps> = ({ onViewChange
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-100px)] space-y-4 animate-in fade-in duration-200 select-none">
+    <div className="flex flex-col space-y-6 animate-in fade-in duration-200">
       {/* 1. Pipeline Stepper Header Bar */}
       <section className="bg-white p-5 rounded-[24px] border border-slate-100 shadow-sm shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
@@ -180,7 +180,7 @@ export const AIProcessingView: React.FC<AIProcessingViewProps> = ({ onViewChange
         onMouseUp={handleMouseUp}
         onTouchMove={handleMouseMove}
         onTouchEnd={handleMouseUp}
-        className="flex-1 relative bg-slate-200 rounded-[28px] overflow-hidden border border-slate-200 shadow-sm cursor-col-resize select-none"
+        className="relative h-[480px] sm:h-[560px] bg-slate-200 rounded-[28px] overflow-hidden border border-slate-200 shadow-sm cursor-col-resize select-none"
       >
         {/* Right Pane: AI Extraction Cadastral Overlay */}
         <div

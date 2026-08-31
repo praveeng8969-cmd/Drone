@@ -46,7 +46,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 font-sans antialiased">
+    <div className="h-screen w-full bg-[#F8FAFC] text-slate-900 font-sans antialiased flex overflow-hidden">
       {/* Side Navigation Bar */}
       <SideNavBar
         currentView={currentView}
@@ -57,7 +57,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <div className="md:pl-[260px] flex flex-col min-h-screen">
+      <div className="flex-1 md:pl-[260px] flex flex-col h-screen min-w-0 overflow-hidden">
         {/* Top Navigation Bar */}
         <TopNavBar
           currentView={currentView}
@@ -70,49 +70,51 @@ export default function App() {
         />
 
         {/* Dynamic Main Workspace Router */}
-        <main className="flex-1 mt-[76px] p-6 md:p-8 overflow-y-auto">
-          {currentView === 'dashboard' && (
-            <DashboardView
-              onViewChange={setCurrentView}
-              onSelectProject={handleSelectProject}
-              onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
-            />
-          )}
+        <main className="flex-1 mt-[76px] p-4 sm:p-6 md:p-8 overflow-y-auto custom-scrollbar">
+          <div className="max-w-7xl mx-auto pb-12">
+            {currentView === 'dashboard' && (
+              <DashboardView
+                onViewChange={setCurrentView}
+                onSelectProject={handleSelectProject}
+                onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
+              />
+            )}
 
-          {currentView === 'parcel-mapping' && (
-            <GisMapWorkspace
-              selectedParcel={selectedParcel}
-              onParcelSelect={setSelectedParcel}
-            />
-          )}
+            {currentView === 'parcel-mapping' && (
+              <GisMapWorkspace
+                selectedParcel={selectedParcel}
+                onParcelSelect={setSelectedParcel}
+              />
+            )}
 
-          {currentView === 'ai-processing' && (
-            <AIProcessingView onViewChange={setCurrentView} />
-          )}
+            {currentView === 'ai-processing' && (
+              <AIProcessingView onViewChange={setCurrentView} />
+            )}
 
-          {currentView === 'projects' && (
-            <ProjectsView
-              onViewChange={setCurrentView}
-              onSelectProject={handleSelectProject}
-              onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
-            />
-          )}
+            {currentView === 'projects' && (
+              <ProjectsView
+                onViewChange={setCurrentView}
+                onSelectProject={handleSelectProject}
+                onOpenNewProjectModal={() => setIsNewProjectModalOpen(true)}
+              />
+            )}
 
-          {currentView === 'drone-imagery' && (
-            <DroneImageryView />
-          )}
+            {currentView === 'drone-imagery' && (
+              <DroneImageryView />
+            )}
 
-          {currentView === 'validation' && (
-            <ValidationView />
-          )}
+            {currentView === 'validation' && (
+              <ValidationView />
+            )}
 
-          {currentView === 'settings' && (
-            <SettingsView />
-          )}
+            {currentView === 'settings' && (
+              <SettingsView />
+            )}
 
-          {currentView === 'support' && (
-            <SupportView />
-          )}
+            {currentView === 'support' && (
+              <SupportView />
+            )}
+          </div>
         </main>
       </div>
 

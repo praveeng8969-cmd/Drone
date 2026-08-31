@@ -42,7 +42,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-slate-950 flex items-center justify-center p-0 md:p-6 lg:p-10 font-sans">
+    <div className="w-full min-h-screen bg-slate-950 flex items-center justify-center p-4 md:p-6 lg:p-10 font-sans overflow-y-auto custom-scrollbar">
       {/* Mode Switcher Pill in Top Right for seamless preview between the two design styles from prompt */}
       <div className="fixed top-4 right-4 z-50 flex items-center bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-xl border border-slate-200 gap-2 text-xs font-bold">
         <span className="text-slate-400">UI Theme:</span>
@@ -70,7 +70,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onLoginSuccess }) => {
 
       {authMode === 'government' ? (
         /* ================== GOVERNMENT FEDRAMP MUNICIPAL SCREEN (Image 1 & 3) ================== */
-        <div className="w-full h-screen md:h-[90vh] md:max-h-[920px] md:max-w-6xl bg-white md:rounded-[32px] flex flex-col md:flex-row shadow-2xl overflow-hidden relative border border-slate-100">
+        <div className="w-full min-h-[580px] md:h-[90vh] md:max-h-[920px] md:max-w-6xl bg-white rounded-3xl md:rounded-[32px] flex flex-col md:flex-row shadow-2xl overflow-hidden relative border border-slate-100 my-auto">
           {/* Left Panel: GIS Map Visualization & Branding */}
           <div className="relative w-full md:w-1/2 lg:w-7/12 h-64 md:h-full bg-slate-950 flex flex-col justify-between p-6 md:p-12 overflow-hidden text-white">
             {/* Background Visualization Layer */}

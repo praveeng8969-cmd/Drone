@@ -92,7 +92,7 @@ export const GisMapWorkspace: React.FC<GisMapWorkspaceProps> = ({
   };
 
   return (
-    <div className="relative w-full h-[calc(100vh-120px)] rounded-[28px] overflow-hidden border border-slate-200 shadow-sm bg-slate-100 select-none">
+    <div className="relative w-full h-[calc(100vh-160px)] min-h-[540px] rounded-[28px] overflow-hidden border border-slate-200 shadow-sm bg-slate-100 select-none">
       {/* Satellite Imagery Base Layer */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-300"
